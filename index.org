@@ -1,0 +1,77 @@
+#+TITLE: Phantom and Narrow Networks
+#+AUTHOR: Thomas Moulia
+#+OPTIONS: H:3
+
+** Health plan network directories are inaccurate.
+
+Most health plans are broadly similar, but differ in a few critical points: the
+monthly premium, the deductible, ..., and the network, i.e. the doctors who
+accept that plan. Insurers are required to maintain a directory for the network,
+allowing people to identify sanctioned doctors. But, there's a problem: these
+directories are often inaccurate [fn:inaccurate], and impossible to compare.
+
+Without an accurate directory, identifying the doctors who accept a particular
+health plan is error-prone, time consuming, and a cause of accidental out of
+network/pocket payments [fn:out_of_pocket]. The Affordable Care Act's health
+exchange's forward the curious to isolated and inaccurate insurer network
+directories, making it pointless to compare networks.
+
+** Questions
+
+To better understand the failures of current network directories, and how they
+might be improved, we're asking questions. At the moment, two questions:
+
+*** Why are the health plans' directories inaccurate?
+
+Alright, why are the directories inaccurate? Despite no lack of
+explanations [fn:inaccurate_explanations], the exact reasons are unclear. We
+need to know where the breakdown is to fix it, so the first step is learning
+more by talking to patients, doctors, insurers, and regulators. The goal is a
+flow chart of how the directories are maintained, and where the process is breaking
+down.
+
+Once the problems are identified, the question turns to their solution.
+
+*** Are health plan network comparisons valuable?
+
+Assuming that we can figure out how to maintain accurate provider directories,
+are network comparisons valuable? This might take the form of multiple plans'
+networks overlaid map, a description of individual networks robustness per a
+region, ... etc. There is no tool for comparing networks, leaving the usefulness
+and presentation unexplored.
+
+To get some answers, we'll create a fake health exchange. Taking stylistic cues
+from Covered California, people will be presented with a side-by-side health
+plan comparison. Within it's context, A/B tests can be used to iterate how the
+networks are presented, and test their value to a mock buyer.
+
+
+
+**** NOTE: Anthem Blue Cross + California
+
+I focus on the Anthem Blue Cross Minimum Pathway X PPO plan bought through
+Covered California because that was the plan which introduced me to this issue.
+Additionally, Anthem gained the most enrollees through the California exchange
+and definitely has an accuracy issue with their doctor directory. But, these
+inaccuracies aren't limited to Anthem [fn:not_anthem], or to California
+[footnote?].
+
+
+[fn:inaccurate] California's Deparment of Managed Care reports "a serious
+divergence between the information provided by the Plan and the response
+enrollees actually encounter at the point of service".
+
+[fn:out_of_pocket] When buying a health plan, some people used a stale insurer
+directory to confirm their current doctor would accept the plan, and later
+discovered the opposite. Either they pay out of pocket, or find a new
+doctor. Similarly, patients of multi-doctor operations have been surprised to
+find on the bill that not all the doctors accepted their health
+insurance.
+
+[fn:inaccurate_explanations] Insurers say their directory need only contain
+doctors who are contracting with them for that plan, not necessarily doctors who
+can be contacted. The DHMC disagrees. Doctors often move, leaving repeated
+records in the directory.
+
+
+[fn:not_anthem] TODO: Cite Aetna
