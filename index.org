@@ -4,22 +4,23 @@
 
 ** Health plan network directories are inaccurate.
 
-Most health plans are broadly similar, but differ in a few critical points: the
-monthly premium, the deductible, ..., and the network, i.e. the doctors who
-accept that plan. Insurers are required to maintain a directory for the network,
-allowing people to identify sanctioned doctors. But, there's a problem: these
-directories are often inaccurate [fn:inaccurate], and impossible to compare.
+Most health plans are broadly similar, but differ in a few critical
+points. These include the monthly premium, deductible, and network, i.e. the
+doctors who accept that plan. Insurers are required to maintain a directory for
+the network, allowing people to identify in-network doctors. But, there's a
+problem: these directories are often inaccurate [fn:inaccurate], and painful
+to compare.
 
 Without an accurate directory, identifying the doctors who accept a particular
 health plan is error-prone, time consuming, and a cause of accidental out of
 network/pocket payments [fn:out_of_pocket]. The Affordable Care Act's health
-exchange's forward the curious to isolated and inaccurate insurer network
-directories, making it pointless to compare networks.
+exchanges forward the curious to isolated and inaccurate insurer network
+directories, making it painful to compare networks.
 
 ** Questions
 
-To better understand the failures of current network directories, and how they
-might be improved, we're asking questions. At the moment, two questions:
+These questions are the first strokes we'll take at figuring out where the
+problems are, and how we might add to the solution.
 
 *** Why are the health plans' directories inaccurate?
 
